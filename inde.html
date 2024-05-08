@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Kalkulator</title>
+  </head>
+  <body>
+    <div class="box-kalkulator">
+      <div class="display-kalkulator">
+        <input type="text" id="displayKalkulator" placeholder="0" disabled />
+      </div>
+
+      <div class="button-kalkulator">
+        <div class="button-grup-kalkulator">
+          <button class="button" onclick="showValue('7')">7</button>
+          <button class="button" onclick="showValue('4')">4</button>
+          <button class="button" onclick="showValue('2')">2</button>
+          <button class="button" onclick="showValue('0')">0</button>
+        </div>
+        <div class="button-grup-kalkulator">
+          <button class="button" onclick="showValue('8')">8</button>
+          <button class="button" onclick="showValue('5')">5</button>
+          <button class="button" onclick="showValue('2')">2</button>
+          <button class="button" onclick="calculate()">=</button>
+        </div>
+        <div class="button-grup-kalkulator">
+          <button class="button" onclick="showValue('9')">9</button>
+          <button class="button" onclick="showValue('6')">6</button>
+          <button class="button" onclick="showValue('3')">3</button>
+          <button class="button" onclick="showValue('-')">-</button>
+        </div>
+        <div class="button-grup-kalkulator">
+          <button class="button" onclick="delet()">D</button>
+          <button class="button" onclick="showValue('*')">X</button>
+          <button class="button" onclick="showValue('/')">/</button>
+          <button class="button" onclick="showValue('+')">+</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
